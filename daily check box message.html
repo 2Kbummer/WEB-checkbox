@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <main>
+        <head>
+            <title>
+            Checkboxes
+            </title>
+            <h1>Daily Checkboxes</h1>
+        </head>
+        
+        <body>
+            <script>
+                function checkboxes(){
+                    const checkbox = document.getElementById("myCheck"+ i);
+                    const text = document.getElementById("text");
+                    if(checkbox.checked){
+                        checkbox.innerHTML = "Time to rest";
+                    };
+                };
+            </script>
+
+            <h2>Message</h2>
+            <h5>Left ------------- Right</h5>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 5 min </label>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 5 min </label><br>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 10 min </label>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 10 min </label><br>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 15 min </label>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 15 min </label><br>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 20 min </label>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 20 min </label><br>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 25 min </label>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 25 min </label><br>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 30 min </label>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 30 min </label><br>
+            <h2>Back strech</h2>
+            <label><input type="checkbox" id="myCheck" onclick="checkboxes()"> 10 min </label>
+        </body>
+    </main>
+</html>
+
+
+
+
+<!-- EXTRA CODE
+    <p id="text" style="display:none"> Now Rest </p>
+            <script>
+                function checkboxes(){
+                    var checkbox = document.getElementById("myCheck");
+                    var text = document.getElementById("text");
+                    if(checkbox.checked == true){
+                        text.style.display = "block"
+                    } else {
+                        text.style.display = "none"
+                    }
+                }
+            </script>
+  -->
